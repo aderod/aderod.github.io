@@ -320,6 +320,139 @@ desired effect
     <!-- Main content -->
     <section class="content container-fluid">
 
+
+	<div class="row">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">Баланс</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-wrench"></i></button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Это</a></li>
+                    <li><a href="#">Выпадающее</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Меню</a></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="row">
+                <div class="col-md-8">
+                  <p class="text-center">
+                    <strong>Топливный баланс: 1 Jan, 2019 - 30 Jul, 2019</strong>
+                  </p>
+
+                  <div class="chart">
+                    <!-- Sales Chart Canvas -->
+                    <canvas id="salesChart" style="height: 180px;"></canvas>
+                  </div>
+                  <!-- /.chart-responsive -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-4">
+                  <p class="text-center">
+                    <strong>Текущие запасы</strong>
+                  </p>
+
+                  <div class="progress-group">
+                    <span class="progress-text">Бензин ББ110</span>
+                    <span class="progress-number"><b>160</b>/200 млн тонн</span>
+
+                    <div class="progress sm">
+                      <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <!-- /.progress-group -->
+                  <div class="progress-group">
+                    <span class="progress-text">Бензин АИ-98</span>
+                    <span class="progress-number"><b>310</b>/400 млн тонн</span>
+
+                    <div class="progress sm">
+                      <div class="progress-bar progress-bar-red" style="width: 80%"></div>
+                    </div>
+                  </div>
+				  <!-- /.progress-group -->
+                  <div class="progress-group">
+                    <span class="progress-text">Бензин АИ-95</span>
+                    <span class="progress-number"><b>250</b>/500 млн тонн</span>
+
+                    <div class="progress sm">
+                      <div class="progress-bar progress-bar-yellow" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <!-- /.progress-group -->
+                  <div class="progress-group">
+                    <span class="progress-text">Дизельное топливо</span>
+                    <span class="progress-number"><b>480</b>/800 млн тонн</span>
+
+                    <div class="progress sm">
+                      <div class="progress-bar progress-bar-green" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <!-- /.progress-group -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- ./box-body -->
+            <div class="box-footer">
+              <div class="row">
+                <div class="col-sm-3 col-xs-6">
+                  <div class="description-block border-right">
+                    <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
+                    <h5 class="description-header">35 210 000.43</h5>
+                    <span class="description-text">Оборот</span>
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-3 col-xs-6">
+                  <div class="description-block border-right">
+                    <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i> 0%</span>
+                    <h5 class="description-header">10 390 000.90</h5>
+                    <span class="description-text">Расходы</span>
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-3 col-xs-6">
+                  <div class="description-block border-right">
+                    <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
+                    <h5 class="description-header">24 813 000.53</h5>
+                    <span class="description-text">Доходы</span>
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-3 col-xs-6">
+                  <div class="description-block">
+                    <span class="description-percentage text-red"><i class="fa fa-caret-down"></i> 18%</span>
+                    <h5 class="description-header">1200</h5>
+                    <span class="description-text">Запасы</span>
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
       <!--------------------------
         | Your Page Content Here |
         -------------------------->
@@ -435,9 +568,24 @@ desired effect
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
-
+<!-- Sparkline -->
+<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<!-- jvectormap  -->
+<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<!-- SlimScroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- ChartJS -->
+<script src="bower_components/chart.js/Chart.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard2.js"></script>
+<!-- AdminLTE for demo purposes
+<script src="dist/js/demo.js"></script>
+ -->
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. -->

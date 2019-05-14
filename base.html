@@ -447,7 +447,7 @@ desired effect
         </div>
         <div class="box-body">
           <div class="row">
-				<div class="col-sm-12">
+				<div class="col-sm-7">
 					
 					 <!-- Контейнер -->
 					<div id="sample" style="width:100%">
@@ -484,6 +484,74 @@ desired effect
 										
 					
 				</div>
+				
+				<div class="col-sm-5">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Приход расход</h3>
+
+              <div class="box-tools">
+                <div class="input-group input-group-sm" style="width: 150px;">
+                  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+                  <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
+              <table class="table table-hover">
+                <tbody><tr>
+                  <th>ID</th>
+                  <th>Топливо</th>
+				  <th>Количество</th>
+                  <th>Дата</th>
+                  <th>Статус</th>
+                  <th>Описание</th>
+                </tr>
+                <tr>
+                  <td>183</td>
+                  <td>ДТА</td>
+				  <td>100 тонн</td>
+                  <td>11-7-2020</td>
+                  <td><span class="label label-success">Отпуск</span></td>
+                  <td>Отпуск дизельного топлива в Нижнеколымское</td>
+                </tr>
+                <tr>
+                  <td>219</td>
+                  <td>АИ95</td>
+				  <td>100 тонн</td>
+                  <td>11-7-2020</td>
+                  <td><span class="label label-warning">Ожидание</span></td>
+                  <td>Отпуск бензина АИ-95 в Хандыгу</td>
+                </tr>
+                <tr>
+                  <td>657</td>
+                  <td>АИ98</td>
+				  <td>100 тонн</td>
+                  <td>11-7-2020</td>
+                  <td><span class="label label-primary">Прием</span></td>
+                  <td>Прием состава с топливом</td>
+                </tr>
+                <tr>
+                  <td>175</td>
+                  <td>АИ80</td>
+				  <td>100 тонн</td>
+                  <td>11-7-2020</td>
+                  <td><span class="label label-danger">Отменено</span></td>
+                  <td>Отпуск бензина АИ-80 на АЗС-4</td>
+                </tr>
+              </tbody></table>
+            </div>
+			<br>
+			<b>Баланс</b>: 450 тонн
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+				
             <!-- /.col -->
           </div>
           <!-- /.row -->

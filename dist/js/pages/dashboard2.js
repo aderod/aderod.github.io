@@ -99,37 +99,37 @@ $(function () {
       value    : 700,
       color    : '#f56954',
       highlight: '#f56954',
-      label    : 'Chrome'
+      label    : 'Дизельное топливо'
     },
     {
       value    : 500,
       color    : '#00a65a',
       highlight: '#00a65a',
-      label    : 'IE'
+      label    : 'Бензин АИ95'
     },
     {
       value    : 400,
       color    : '#f39c12',
       highlight: '#f39c12',
-      label    : 'FireFox'
+      label    : 'Бензин АИ98'
     },
     {
       value    : 600,
       color    : '#00c0ef',
       highlight: '#00c0ef',
-      label    : 'Safari'
+      label    : 'Бензин АИ92'
     },
     {
       value    : 300,
       color    : '#3c8dbc',
       highlight: '#3c8dbc',
-      label    : 'Opera'
+      label    : 'Керосин ТС-1'
     },
     {
       value    : 100,
       color    : '#d2d6de',
       highlight: '#d2d6de',
-      label    : 'Navigator'
+      label    : 'Бензин ББ110'
     }
   ];
   var pieOptions     = {
@@ -156,7 +156,7 @@ $(function () {
     // String - A legend template
     legendTemplate       : '<ul class=\'<%=name.toLowerCase()%>-legend\'><% for (var i=0; i<segments.length; i++){%><li><span style=\'background-color:<%=segments[i].fillColor%>\'></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>',
     // String - A tooltip template
-    tooltipTemplate      : '<%=value %> <%=label%> users'
+    tooltipTemplate      : 'Расход: <%=value %> тонн <%=label%>'
   };
   // Create pie or douhnut chart
   // You can switch between pie and douhnut using the method below.

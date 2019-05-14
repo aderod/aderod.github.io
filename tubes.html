@@ -315,13 +315,31 @@ desired effect
 			
 	  <div class="box box-default color-palette-box">
         <div class="box-header with-border">
-          <h3 class="box-title"><i class="fa fa-tag"></i>Мощности</h3>
+          <h3 class="box-title"><i class="fa fa-tag"></i>Текущее потребление</h3>
         </div>
         <div class="box-body">
           <div class="row">
 				<div class="col-sm-12">
 					
-			
+					<div class="box box-primary">
+						<div class="box-header with-border">
+						  <i class="fa fa-bar-chart-o"></i>
+
+						  <h3 class="box-title">Потребление газа</h3>
+
+						  <div class="box-tools pull-right">
+							Real time
+							<div class="btn-group" id="realtime" data-toggle="btn-toggle">
+							  <button type="button" class="btn btn-default btn-xs active" data-toggle="on">On</button>
+							  <button type="button" class="btn btn-default btn-xs" data-toggle="off">Off</button>
+							</div>
+						  </div>
+						</div>
+						<div class="box-body">
+						  <div id="interactive" style="height: 300px; padding: 0px; position: relative;"><canvas class="flot-base" width="2263" height="300" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 2263px; height: 300px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 21px; text-align: center;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 134px; text-align: center;">5</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 243px; text-align: center;">10</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 356px; text-align: center;">15</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 469px; text-align: center;">20</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 581px; text-align: center;">25</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 694px; text-align: center;">30</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 807px; text-align: center;">35</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 919px; text-align: center;">40</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 1032px; text-align: center;">45</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 1144px; text-align: center;">50</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 1257px; text-align: center;">55</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 1370px; text-align: center;">60</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 1482px; text-align: center;">65</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 1595px; text-align: center;">70</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 1708px; text-align: center;">75</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 1820px; text-align: center;">80</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 1933px; text-align: center;">85</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 2045px; text-align: center;">90</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 107px; top: 283px; left: 2158px; text-align: center;">95</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 270px; left: 13px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 216px; left: 7px; text-align: right;">20</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 162px; left: 7px; text-align: right;">40</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 108px; left: 7px; text-align: right;">60</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 54px; left: 7px; text-align: right;">80</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 1px; text-align: right;">100</div></div></div><canvas class="flot-overlay" width="2263" height="300" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 2263px; height: 300px;"></canvas></div>
+						</div>
+						<!-- /.box-body-->
+					  </div>
 		  
 				</div>
             <!-- /.col -->
@@ -335,7 +353,7 @@ desired effect
 	  
 	  <div class="box box-default color-palette-box">
         <div class="box-header with-border">
-          <h3 class="box-title"><i class="fa fa-tag"></i>Потребление</h3>
+          <h3 class="box-title"><i class="fa fa-tag"></i>Управление</h3>
         </div>
         <div class="box-body">
           <div class="row">
@@ -483,34 +501,221 @@ desired effect
 <script src="bower_components/chart.js/Chart.js"></script>
 <script src="dist/js/svg.js"></script>
 
-
+<script src="bower_components/Flot/jquery.flot.js"></script>
+<script src="bower_components/Flot/jquery.flot.resize.js"></script>
+<script src="bower_components/Flot/jquery.flot.pie.js"></script>
+<script src="bower_components/Flot/jquery.flot.categories.js"></script>
 
 <script id="code">
-    var mymap = L.map('mapid').setView([62.012578, 129.837340], 10);
 
-	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-		maxZoom: 18,
-		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-		id: 'mapbox.streets'
-	}).addTo(mymap);
+  $(function () {
+    /*
+     * Flot Interactive Chart
+     * -----------------------
+     */
+    // We use an inline data source in the example, usually data would
+    // be fetched from a server
+    var data = [], totalPoints = 100
 
-	L.marker([62.081703, 130.068810]).addTo(mymap)
-		.bindPopup("<b>А123В14</b><br />SCANIA-P360-8x4 АЦ 465232-23<BR>12 тонн ДТ <br> Назначение НБ Хандыга<br>Примерное время прибытия 20:43").openPopup();
-	L.marker([61.851812, 130.127465]).addTo(mymap)
-		.bindPopup("<b>А123В14</b><br />SCANIA-P360-8x4 АЦ 465232-23<BR>12 тонн ДТ <br> Назначение НБ Майя<br>Примерное время прибытия 18:23").openPopup();
-	L.marker([62.084787, 129.394256]).addTo(mymap)
-		.bindPopup("<b>А123В14</b><br />SCANIA-P360-8x4 АЦ 465232-23<BR>12 тонн ДТ <br> Назначение НБ Горный<br>Примерное время прибытия 21:40").openPopup();
-	var popup = L.popup();
+    function getRandomData() {
+
+      if (data.length > 0)
+        data = data.slice(1)
+
+      // Do a random walk
+      while (data.length < totalPoints) {
+
+        var prev = data.length > 0 ? data[data.length - 1] : 50,
+            y    = prev + Math.random() * 10 - 5
+
+        if (y < 0) {
+          y = 0
+        } else if (y > 100) {
+          y = 100
+        }
+
+        data.push(y)
+      }
+
+      // Zip the generated y values with the x values
+      var res = []
+      for (var i = 0; i < data.length; ++i) {
+        res.push([i, data[i]])
+      }
+
+      return res
+    }
+
+    var interactive_plot = $.plot('#interactive', [getRandomData()], {
+      grid  : {
+        borderColor: '#f3f3f3',
+        borderWidth: 1,
+        tickColor  : '#f3f3f3'
+      },
+      series: {
+        shadowSize: 0, // Drawing is faster without shadows
+        color     : '#3c8dbc'
+      },
+      lines : {
+        fill : true, //Converts the line chart to area chart
+        color: '#3c8dbc'
+      },
+      yaxis : {
+        min : 0,
+        max : 100,
+        show: true
+      },
+      xaxis : {
+        show: true
+      }
+    })
+
+    var updateInterval = 500 //Fetch data ever x milliseconds
+    var realtime       = 'on' //If == to on then fetch data every x seconds. else stop fetching
+    function update() {
+
+      interactive_plot.setData([getRandomData()])
+
+      // Since the axes don't change, we don't need to call plot.setupGrid()
+      interactive_plot.draw()
+      if (realtime === 'on')
+        setTimeout(update, updateInterval)
+    }
+
+    //INITIALIZE REALTIME DATA FETCHING
+    if (realtime === 'on') {
+      update()
+    }
+    //REALTIME TOGGLE
+    $('#realtime .btn').click(function () {
+      if ($(this).data('toggle') === 'on') {
+        realtime = 'on'
+      }
+      else {
+        realtime = 'off'
+      }
+      update()
+    })
+    /*
+     * END INTERACTIVE CHART
+     */
+
+    /*
+     * LINE CHART
+     * ----------
+     */
+    //LINE randomly generated data
+
+    var sin = [], cos = []
+    for (var i = 0; i < 14; i += 0.5) {
+      sin.push([i, Math.sin(i)])
+      cos.push([i, Math.cos(i)])
+    }
+    var line_data1 = {
+      data : sin,
+      color: '#3c8dbc'
+    }
+    var line_data2 = {
+      data : cos,
+      color: '#00c0ef'
+    }
+    $.plot('#line-chart', [line_data1, line_data2], {
+      grid  : {
+        hoverable  : true,
+        borderColor: '#f3f3f3',
+        borderWidth: 1,
+        tickColor  : '#f3f3f3'
+      },
+      series: {
+        shadowSize: 0,
+        lines     : {
+          show: true
+        },
+        points    : {
+          show: true
+        }
+      },
+      lines : {
+        fill : false,
+        color: ['#3c8dbc', '#f56954']
+      },
+      yaxis : {
+        show: true
+      },
+      xaxis : {
+        show: true
+      }
+    })
+    //Initialize tooltip on hover
+    $('<div class="tooltip-inner" id="line-chart-tooltip"></div>').css({
+      position: 'absolute',
+      display : 'none',
+      opacity : 0.8
+    }).appendTo('body')
+    $('#line-chart').bind('plothover', function (event, pos, item) {
+
+      if (item) {
+        var x = item.datapoint[0].toFixed(2),
+            y = item.datapoint[1].toFixed(2)
+
+        $('#line-chart-tooltip').html(item.series.label + ' of ' + x + ' = ' + y)
+          .css({ top: item.pageY + 5, left: item.pageX + 5 })
+          .fadeIn(200)
+      } else {
+        $('#line-chart-tooltip').hide()
+      }
+
+    })
+    /* END LINE CHART */
+
+    /*
+     * FULL WIDTH STATIC AREA CHART
+     * -----------------
+     */
+    var areaData = [[2, 88.0], [3, 93.3], [4, 102.0], [5, 108.5], [6, 115.7], [7, 115.6],
+      [8, 124.6], [9, 130.3], [10, 134.3], [11, 141.4], [12, 146.5], [13, 151.7], [14, 159.9],
+      [15, 165.4], [16, 167.8], [17, 168.7], [18, 169.5], [19, 168.0]]
+    $.plot('#area-chart', [areaData], {
+      grid  : {
+        borderWidth: 0
+      },
+      series: {
+        shadowSize: 0, // Drawing is faster without shadows
+        color     : '#00c0ef'
+      },
+      lines : {
+        fill: true //Converts the line chart to area chart
+      },
+      yaxis : {
+        show: false
+      },
+      xaxis : {
+        show: false
+      }
+    })
+
+    /* END AREA CHART */
+
+   
+    /*
+     * END DONUT CHART
+     */
+
+  })
+
+  /*
+   * Custom Label formatter
+   * ----------------------
+   */
+  function labelFormatter(label, series) {
+    return '<div style="font-size:13px; text-align:center; padding:2px; color: #fff; font-weight: 600;">'
+      + label
+      + '<br>'
+      + Math.round(series.percent) + '%</div>'
+  }
+
 </script>
 
-<script id="chatBroEmbedCode">
-/* Chatbro Widget Embed Code Start */
-function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','//www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}
-/* Chatbro Widget Embed Code End */
-ChatbroLoader({encodedChatId: '13Qvi'});
-</script>
 
 
 <!-- AdminLTE for demo purposes

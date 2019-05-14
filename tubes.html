@@ -353,19 +353,72 @@ desired effect
 	  
 	  <div class="box box-default color-palette-box">
         <div class="box-header with-border">
-          <h3 class="box-title"><i class="fa fa-tag"></i>Управление</h3>
+          <h3 class="box-title"><i class="fa fa-tag"></i>События</h3>
         </div>
         <div class="box-body">
-          <div class="row">
-				<div class="col-sm-12">
-					
-					 <!-- Контейнер -->
-					 
-										
-					
+          
+		  <div class="row">
+			<div class="col-xs-12">
+			  <div class="box">
+				<div class="box-header">
+				  <h3 class="box-title">Текущие работы</h3>
+
+				  <div class="box-tools">
+					<div class="input-group input-group-sm" style="width: 150px;">
+					  <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+					  <div class="input-group-btn">
+						<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+					  </div>
+					</div>
+				  </div>
 				</div>
-            <!-- /.col -->
-          </div>
+				<!-- /.box-header -->
+				<div class="box-body table-responsive no-padding">
+				  <table class="table table-hover">
+					<tbody><tr>
+					  <th>ID</th>
+					  <th>Генподрядчик</th>
+					  <th>Дата</th>
+					  <th>Статус</th>
+					  <th>Примечание</th>
+					</tr>
+					<tr>
+					  <td>183</td>
+					  <td>ООО Аленс</td>
+					  <td>11-7-2021</td>
+					  <td><span class="label label-success">Сдано</span></td>
+					  <td>Система управления энергетикой.</td>
+					</tr>
+					<tr>
+					  <td>219</td>
+					  <td>КБ Монолит</td>
+					  <td>11-7-2020</td>
+					  <td><span class="label label-warning">Ожидание</span></td>
+					  <td>Заработать любовь населения</td>
+					</tr>
+					<tr>
+					  <td>657</td>
+					  <td>ООО Вектор</td>
+					  <td>11-7-2020</td>
+					  <td><span class="label label-primary">Сдано</span></td>
+					  <td>Вторая очередь ГРП</td>
+					</tr>
+					<tr>
+					  <td>175</td>
+					  <td>ЗАО НТЦ НПЗ ТЦ</td>
+					  <td>11-7-2020</td>
+					  <td><span class="label label-danger">Не выполнено</span></td>
+					  <td>Мост через Лену</td>
+					</tr>
+				  </tbody></table>
+				</div>
+				<!-- /.box-body -->
+			  </div>
+			  <!-- /.box -->
+			</div>
+		  </div>
+	  
           <!-- /.row -->
         </div>
         <!-- /.box-body -->
